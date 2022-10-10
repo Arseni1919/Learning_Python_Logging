@@ -14,6 +14,18 @@ The defined levels, in order of increasing severity, are the following:
 
 ```python
 import logging
+
+logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
+
+# or
+
+logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.DEBUG)
+```
+
+## MyUsage
+
+```python
+
 ```
 
 ## Usage
