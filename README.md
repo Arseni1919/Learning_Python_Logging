@@ -104,4 +104,7 @@ except Exception as e:
 ## Credits
 
 - [blog | Logging in Python](https://realpython.com/python-logging/)
+- [`.basicConfig()` attributes](https://docs.python.org/3/library/logging.html#logging.basicConfig)
+- [`log` attributes](https://docs.python.org/3/library/logging.html#logrecord-attributes)
+- [`strptime` attributes](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
 
