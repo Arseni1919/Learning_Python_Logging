@@ -14,6 +14,12 @@ The defined levels, in order of increasing severity, are the following:
 
 ```python
 import logging
+```
+
+## MyUsage
+
+```python
+import logging
 
 logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
@@ -21,11 +27,20 @@ logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:
 
 logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.DEBUG)
 ```
-
-## MyUsage
+If you're using the root logger, for example because you called `logging.basicConfig()`, then you can use:
 
 ```python
+import logging
+logging.root.level
+```
 
+For example:
+
+```python
+import logging
+if logging.DEBUG >= logging.root.level:
+    # Do something
+    pass
 ```
 
 ## Usage
